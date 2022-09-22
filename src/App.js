@@ -38,13 +38,13 @@ function App() {
         {groups.map((group, index) => (
           <option key={index} value={group}>
             {group}
-          </option>
+          </option> 
         ))}
       </select>
       <button className="christmafyButton" onClick={Christmafy}>
         Christmafy!
       </button>
-      <h2 className="christmafyingStatusText linear-wipe">{christmafyingStatus}</h2>
+      <h2 className="christmafyingStatusText">{christmafyingStatus}</h2>
     </div>
   );
 }

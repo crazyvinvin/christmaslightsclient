@@ -43,9 +43,24 @@
     font-size: 400%;
     margin-top: 5%;
     margin-left: auto;
-    margin-right:auto;
-    background: linear-gradient(90deg, rgba(253, 45, 45, 1) 0%,rgba(39, 246, 81, 1) 110%);
-    background-size: 100%;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgba(253, 45, 45, 1) 0%, rgba(39, 246, 81, 1) 50%, rgba(253, 45, 45, 1) 100%, rgba(39, 246, 81, 1) 150%);
+    background-size: 200%;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slide-gradient 3s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}  
+
+@keyframes slide-gradient {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 200% 0%;
+    }
 }
